@@ -214,6 +214,7 @@ body {
 }
 
 #dj-photo {
+  cursor: pointer;
   transition: transform 0.5s ease-in-out;
 }
 
@@ -224,4 +225,25 @@ body {
 @keyframes rotate {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+#progress-container {
+  width: 100%;
+  height: 5px;
+  background-color: #ddd;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#progress-bar {
+  width: 0;
+  height: 100%;
+  background-color: #ff9a9e;
+  transition: width 0.1s linear;
+}
+
+#time-display {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
 }
